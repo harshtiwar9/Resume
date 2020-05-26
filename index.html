@@ -7,7 +7,12 @@
     <meta name="keywords" content="Harsh Tiwar, Resume, Portfolio, harsh.tiwar9">
     <meta name="author" content="Harsh Tiwar">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
     <title>Harsh Tiwar - Resume & Portfolio</title>
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -17,8 +22,33 @@
 
   </head>
 
-  <body>
-    <h1>Welcome to my site!</h1>
+  <body class="cyan lighten-5">
+
+    <div class="container">
+      <div class="col s12 m6 l12 center avatar #03aadf light-blue">
+          <img src="Images/Harsh_Tiwar.png" width="150px" height="150px" alt="Harsh Tiwar Profile Pic" class="circle">
+      </div>
+    </div>
+
+    <div id="under_construction" class="modal">
+      <div class="modal-content">
+        <h4>Website Alert</h4>
+        <p>Thanks for visitng my site. I am still working on my resume website. Please check later.</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+      </div>
+    </div>
+
   </body>
+
+  <script type="text/javascript">
+
+    // under_construction Modal call for website alert
+    $(document).ready(function(){
+      $('#under_construction').modal();
+    });
+
+  </script>
 
 </html>
