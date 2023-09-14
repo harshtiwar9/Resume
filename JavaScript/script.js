@@ -10,22 +10,3 @@ function isElementInViewport(element) {
       rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
   }
-  
-  // Function to animate the skill progress bars
-  function animateSkillProgress() {
-    var skills = document.querySelectorAll('.skill');
-    
-    skills.forEach(function(skill) {
-      if (isElementInViewport(skill)) {
-        var progress = skill.querySelector('.skill-progress-bar');
-        var percentage = skill.querySelector('.skill-percentage').textContent;
-        progress.style.width = percentage;
-      }
-    });
-  }
-  
-  // Event listener for scrolling
-  window.addEventListener('scroll', animateSkillProgress);
-  
-  // Call the function initially to animate the skill progress bars that are in viewport
-  animateSkillProgress();  
